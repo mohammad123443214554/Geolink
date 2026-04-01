@@ -1,0 +1,26 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #0f172a;
+  color: white;
+}
+
+.auth-box {
+  margin-top: 50px;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 250px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
