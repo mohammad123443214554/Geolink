@@ -1,1 +1,0 @@
-alert("Geolink started 🚀");
