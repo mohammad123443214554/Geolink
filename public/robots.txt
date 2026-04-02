@@ -1,0 +1,11 @@
+# Geolink - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://geolink-orpin.vercel.app/sitemap.xml
+
+# Disallow admin/private pages
+Disallow: /dashboard
+Disallow: /settings
+Disallow: /api
