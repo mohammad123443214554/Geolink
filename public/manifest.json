@@ -1,0 +1,42 @@
+{
+  "name": "Geolink - Social Media Platform",
+  "short_name": "Geolink",
+  "description": "Earn money by sharing photos and videos on Geolink",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "categories": ["social", "entertainment", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Upload",
+      "short_name": "Upload",
+      "description": "Upload a new photo or video",
+      "url": "/upload",
+      "icons": [{ "src": "/icons/upload.svg", "sizes": "96x96" }]
+    },
+    {
+      "name": "Profile",
+      "short_name": "Profile",
+      "description": "View your profile",
+      "url": "/profile",
+      "icons": [{ "src": "/icons/profile.svg", "sizes": "96x96" }]
+    }
+  ]
+}
