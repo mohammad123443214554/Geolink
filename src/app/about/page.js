@@ -17,29 +17,29 @@ export default function AboutPage() {
           </p>
         </div>
         
-        {/* How to Earn */}
+        {/* UPDATED How to Earn */}
         <div className="card">
           <h2 className="text-2xl font-bold mb-4 flex items-center">
             <span className="mr-2">💰</span>
-            How to Earn Money
+            How to Earn Money (UPDATED!)
           </h2>
           <div className="space-y-4">
-            <div className="flex items-start space-x-3 p-3 bg-gray-50 dark:bg-gray-900 rounded-lg">
-              <span className="text-3xl">❤️</span>
-              <div>
-                <h3 className="font-bold text-lg">Likes</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Earn 1 point for every like = <strong>₹0.01</strong>
-                </p>
-              </div>
-            </div>
-            
             <div className="flex items-start space-x-3 p-3 bg-gray-50 dark:bg-gray-900 rounded-lg">
               <span className="text-3xl">👁️</span>
               <div>
                 <h3 className="font-bold text-lg">Views</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Earn 1 point for every view = <strong>₹0.01</strong>
+                  <strong>2 views = 1 point</strong> = ₹0.005 per view
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex items-start space-x-3 p-3 bg-gray-50 dark:bg-gray-900 rounded-lg">
+              <span className="text-3xl">❤️</span>
+              <div>
+                <h3 className="font-bold text-lg">Likes</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  <strong>2 likes = 1 point</strong> = ₹0.005 per like
                 </p>
               </div>
             </div>
@@ -49,7 +49,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="font-bold text-lg">Comments</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Earn 1 point for every comment = <strong>₹0.01</strong>
+                  <strong>1 comment = 1 point</strong> = ₹0.01 per comment
                 </p>
               </div>
             </div>
@@ -59,7 +59,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="font-bold text-lg">Shares</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Earn 1 point for every share = <strong>₹0.01</strong>
+                  <strong>2 shares = 1 point</strong> = ₹0.005 per share
                 </p>
               </div>
             </div>
@@ -69,15 +69,15 @@ export default function AboutPage() {
               <div>
                 <h3 className="font-bold text-lg text-green-700 dark:text-green-300">Subscriber Bonus</h3>
                 <p className="text-sm text-green-600 dark:text-green-400">
-                  Get <strong>₹1000/month</strong> when you reach 1000 subscribers!
+                  Get <strong>₹500/month</strong> when you reach <strong>5000 subscribers!</strong>
                 </p>
               </div>
             </div>
           </div>
           
           <div className="mt-4 p-4 bg-indigo-50 dark:bg-indigo-900 rounded-lg">
-            <p className="text-sm text-indigo-800 dark:text-indigo-200">
-              <strong>Note:</strong> 1000 points = ₹10
+            <p className="text-sm text-indigo-800 dark:text-indigo-200 font-medium">
+              <strong>💡 Remember:</strong> 1000 points = ₹10
             </p>
           </div>
         </div>
@@ -95,6 +95,7 @@ export default function AboutPage() {
             <div>
               <p className="text-lg font-bold">Mohammad Khan</p>
               <p className="text-gray-600 dark:text-gray-400">Platform launched: January 2026</p>
+              <p className="text-sm text-indigo-600 dark:text-indigo-400 mt-1">Age: 14 years • Built with passion! 🔥</p>
             </div>
           </div>
         </div>
