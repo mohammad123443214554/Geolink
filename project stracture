@@ -1,0 +1,163 @@
+Geolink/                                    ← Root folder
+│
+├── 📂 public/                              ← Static files (DONE ✅)
+│   ├── logo.png
+│   ├── logo-white.png
+│   ├── favicon.ico
+│   ├── manifest.json
+│   ├── sw.js
+│   ├── robots.txt
+│   ├── README.md
+│   │
+│   ├── 📂 images/
+│   │   ├── default-avatar.png
+│   │   ├── default-cover.jpg
+│   │   └── placeholder.png
+│   │
+│   └── 📂 icons/
+│       ├── home.svg
+│       ├── search.svg
+│       ├── upload.svg
+│       ├── profile.svg
+│       ├── icon-192x192.png
+│       └── icon-512x512.png
+│
+├── 📂 src/                                 ← Source code folder
+│   │
+│   ├── 📂 app/                             ← Next.js App Router
+│   │   │
+│   │   ├── layout.js                       ← Main layout (Navbar, etc)
+│   │   ├── page.js                         ← Home feed (/)
+│   │   ├── globals.css                     ← Global styles
+│   │   │
+│   │   ├── 📂 signup/
+│   │   │   └── page.js                     ← Signup page (/signup)
+│   │   │
+│   │   ├── 📂 login/
+│   │   │   └── page.js                     ← Login page (/login)
+│   │   │
+│   │   ├── 📂 profile/
+│   │   │   ├── page.js                     ← Own profile (/profile)
+│   │   │   └── 📂 [username]/
+│   │   │       └── page.js                 ← User profile (/profile/username)
+│   │   │
+│   │   ├── 📂 channel/
+│   │   │   ├── page.js                     ← Create channel (/channel)
+│   │   │   └── 📂 [channelId]/
+│   │   │       └── page.js                 ← View channel (/channel/123)
+│   │   │
+│   │   ├── 📂 dashboard/
+│   │   │   └── page.js                     ← Earnings dashboard (/dashboard)
+│   │   │
+│   │   ├── 📂 library/
+│   │   │   └── page.js                     ← Saved videos/photos (/library)
+│   │   │
+│   │   ├── 📂 chat/
+│   │   │   └── page.js                     ← Chat page (/chat)
+│   │   │
+│   │   ├── 📂 map/
+│   │   │   └── page.js                     ← Location map (/map)
+│   │   │
+│   │   ├── 📂 search/
+│   │   │   └── page.js                     ← Search page (/search)
+│   │   │
+│   │   ├── 📂 settings/
+│   │   │   └── page.js                     ← Settings page (/settings)
+│   │   │
+│   │   ├── 📂 about/
+│   │   │   └── page.js                     ← About page (/about)
+│   │   │
+│   │   └── 📂 upload/
+│   │       └── page.js                     ← Upload video/photo (/upload)
+│   │
+│   ├── 📂 components/                      ← Reusable components
+│   │   │
+│   │   ├── 📂 layout/
+│   │   │   ├── Navbar.jsx                  ← Top navigation
+│   │   │   ├── BottomNav.jsx               ← Bottom navigation (mobile)
+│   │   │   ├── Sidebar.jsx                 ← Desktop sidebar
+│   │   │   └── InstallButton.jsx           ← PWA install button
+│   │   │
+│   │   ├── 📂 posts/
+│   │   │   ├── PostCard.jsx                ← Single post display
+│   │   │   ├── VideoCard.jsx               ← Video post
+│   │   │   ├── PhotoCard.jsx               ← Photo post
+│   │   │   ├── LikeButton.jsx              ← Like functionality
+│   │   │   ├── CommentSection.jsx          ← Comments
+│   │   │   ├── ShareButton.jsx             ← Share functionality
+│   │   │   └── DownloadButton.jsx          ← Download button
+│   │   │
+│   │   ├── 📂 profile/
+│   │   │   ├── ProfileHeader.jsx           ← Profile top section
+│   │   │   ├── CoverPhoto.jsx              ← Cover photo upload
+│   │   │   ├── ProfilePicture.jsx          ← DP upload
+│   │   │   └── FollowButton.jsx            ← Follow/Unfollow
+│   │   │
+│   │   ├── 📂 channel/
+│   │   │   ├── ChannelCard.jsx             ← Channel display
+│   │   │   ├── SubscribeButton.jsx         ← Subscribe button
+│   │   │   └── ChannelStats.jsx            ← Subscriber count
+│   │   │
+│   │   ├── 📂 dashboard/
+│   │   │   ├── EarningsCard.jsx            ← Earnings display
+│   │   │   ├── RewardPoints.jsx            ← Points display
+│   │   │   ├── SubscriberCount.jsx         ← Subscriber stats
+│   │   │   └── AnalyticsChart.jsx          ← Views/Likes chart
+│   │   │
+│   │   ├── 📂 library/
+│   │   │   ├── FolderCard.jsx              ← Custom folder
+│   │   │   ├── CreateFolderModal.jsx       ← New folder popup
+│   │   │   └── VideoGrid.jsx               ← Video grid display
+│   │   │
+│   │   ├── 📂 upload/
+│   │   │   ├── UploadModal.jsx             ← Upload popup
+│   │   │   ├── FileUploader.jsx            ← Drag & drop
+│   │   │   └── ProgressBar.jsx             ← Upload progress
+│   │   │
+│   │   ├── 📂 auth/
+│   │   │   ├── SignupForm.jsx              ← Signup form
+│   │   │   ├── LoginForm.jsx               ← Login form
+│   │   │   ├── OTPVerification.jsx         ← 6-digit OTP
+│   │   │   └── AccountTypeSelector.jsx     ← Private/Public
+│   │   │
+│   │   ├── 📂 search/
+│   │   │   ├── SearchBar.jsx               ← Search input
+│   │   │   └── SearchResults.jsx           ← Results display
+│   │   │
+│   │   └── 📂 common/
+│   │       ├── Button.jsx                  ← Reusable button
+│   │       ├── Input.jsx                   ← Reusable input
+│   │       ├── Modal.jsx                   ← Reusable modal
+│   │       ├── Loading.jsx                 ← Loading spinner
+│   │       └── ThemeToggle.jsx             ← Dark/Light mode
+│   │
+│   ├── 📂 context/                         ← React Context (State)
+│   │   ├── AuthContext.jsx                 ← User login state
+│   │   ├── ThemeContext.jsx                ← Dark/Light mode state
+│   │   └── PostContext.jsx                 ← Posts state
+│   │
+│   ├── 📂 hooks/                           ← Custom React hooks
+│   │   ├── useAuth.js                      ← Authentication hook
+│   │   ├── useTheme.js                     ← Theme hook
+│   │   ├── useUpload.js                    ← Upload hook
+│   │   └── usePWA.js                       ← PWA install hook
+│   │
+│   ├── 📂 lib/                             ← Utility functions
+│   │   ├── api.js                          ← API calls helper
+│   │   ├── validation.js                   ← Form validation
+│   │   ├── storage.js                      ← LocalStorage helper
+│   │   └── constants.js                    ← App constants
+│   │
+│   └── 📂 styles/                          ← Styles
+│       ├── globals.css                     ← Global CSS
+│       └── theme.css                       ← Theme variables
+│
+├── 📄 .env.local                           ← Environment variables
+├── 📄 .gitignore                           ← Git ignore file
+├── 📄 package.json                         ← Dependencies
+├── 📄 package-lock.json                    ← Lock file
+├── 📄 next.config.js                       ← Next.js config
+├── 📄 tailwind.config.js                   ← Tailwind config
+├── 📄 postcss.config.js                    ← PostCSS config
+├── 📄 jsconfig.json                        ← JS config
+└── 📄 README.md                            ← Project README
